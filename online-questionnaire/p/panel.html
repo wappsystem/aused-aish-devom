@@ -27,13 +27,28 @@
 		})
 		//--------------------------------------------------------
 		$('#D__ID').on('show',function(){
+            jQuery.ajaxSetup({async:false});
+            var table=$vm.module_list['sql-setup-form'].Table
+            $vm.request({cmd:'find',table:table,limit:1},function(res){        
+                if(res.status=='np' || res.result==undefined){
+                    res.result=[];
+                }
+                if(res.status=='np'){
+                    if(res.sys.tb=='on') $vm.alert("No permission. Private database table, ask the table's owner for permissions.");
+                    else $vm.alert("No permission.");
+                }
+                id_list=res.result[0].Data.List;
+                //console.log("A: "+JSON.stringify(res.result[0].Data.List))
+            })
+            //console.log("B: " +JSON.stringify($vm.vm['__ID'].input.record))
             var record=$vm.vm['__ID'].input.record;
-			id_list=record.Data.List;
             if(id_list==undefined){
                 alert("No questionnaire was found");
                 return;
             }
-			setup_panel();
+            jQuery.ajaxSetup({async:false});
+
+            setup_panel();
 		})
 		//--------------------------------------------------------
 		var status=[]

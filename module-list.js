@@ -1,7 +1,7 @@
 (function(){
     var modules={
-        "panel-main-aish-devom-astn":    			{url:"$H/p/panel-main.html",router:1},
-        "panel-child-aish-devom-astn":    			{url:"$H/p/panel-child.html"},
+        "panel-main-aish-devom-astn":    			{url:"$H/p/panel-main.html",Table:"aish-devom-astn-sql",router:1},
+        "panel-child-aish-devom-astn":    			{url:"$H/p/panel-child.html",Table:"aish-devom-astn-sql"},
         
         "participant-data":   		{url:"$H/m/participant/participant-data.html",Table:"aish-devom-astn-participant",form_module:"participant-form",router:1,
                                             child_panel:"panel-child-aish-devom-astn",
@@ -17,6 +17,7 @@
         "notes":  		  	  			{url:"$H/m/notes.html"},
         "notes-data":  	    {url:"$H/m/notes-data.html",Table:"aish-devom-astn-notes",form_module:"notes-form",router:1},
         "notes-form":  	    {url:"$H/m/notes-form.html",Table:"aish-devom-astn-notes"},
+        "sql-setup-form":  	    {url:"$H/m/sql-setup-form.html",Table:"aish-devom-astn-sql"},
 
         "consent-astn-data": { url: "$H/m/consent-astn-data.html", Table: "aish-devom-astn-consent-astn-20002423", form_module: "consent-astn-form" , task_name:"Consent"},
         "consent-astn-form": { url: "$H/m/consent-astn-form.html", Table: "aish-devom-astn-consent-astn-20002423", task_name:"Consent" },
