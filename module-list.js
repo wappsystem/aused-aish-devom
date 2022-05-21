@@ -86,7 +86,16 @@
         "aused-60-tp4-form": { url: "$H/m/aused60-form.html", Table: "aish-devom-astn-aused-60-tp4", task_name:"Time point 4 - Aused 60 mins" },
         "aused-60-tp5-data": { url: "$H/m/aused60-data.html", Table: "aish-devom-astn-aused-60-tp5", form_module: "aused-60-tp5-form", task_name:"Time point 5 - Aused 60 mins" },
         "aused-60-tp5-form": { url: "$H/m/aused60-form.html", Table: "aish-devom-astn-aused-60-tp5", task_name:"Time point 5 - Aused 60 mins" },
-
+        "aused-crash-60-tp1-data": { url: "$H/m/aused60-crash-time-data.html", Table: "aish-devom-astn-aused-crash-60-tp1", form_module: "aused-crash-60-tp1-form", task_name:"Time point 1 - Aused Crash 60 mins" },
+        "aused-crash-60-tp1-form": { url: "$H/m/aused60-crash-time-form.html", Table: "aish-devom-astn-aused-crash-60-tp1", task_name:"Time point 1 - Aused Crash 60 mins" },
+        "aused-crash-60-tp2-data": { url: "$H/m/aused60-crash-time-data.html", Table: "aish-devom-astn-aused-crash-60-tp2", form_module: "aused-crash-60-tp2-form", task_name:"Time point 2 - Aused Crash 60 mins" },
+        "aused-crash-60-tp2-form": { url: "$H/m/aused60-crash-time-form.html", Table: "aish-devom-astn-aused-crash-60-tp2", task_name:"Time point 2 - Aused Crash 60 mins" },
+        "aused-crash-60-tp3-data": { url: "$H/m/aused60-crash-time-data.html", Table: "aish-devom-astn-aused-crash-60-tp3", form_module: "aused-crash-60-tp3-form", task_name:"Time point 3 - Aused Crash 60 mins" },
+        "aused-crash-60-tp3-form": { url: "$H/m/aused60-crash-time-form.html", Table: "aish-devom-astn-aused-crash-60-tp3", task_name:"Time point 3 - Aused Crash 60 mins" },
+        "aused-crash-60-tp4-data": { url: "$H/m/aused60-crash-time-data.html", Table: "aish-devom-astn-aused-crash-60-tp4", form_module: "aused-crash-60-tp4-form", task_name:"Time point 4 - Aused Crash 60 mins" },
+        "aused-crash-60-tp4-form": { url: "$H/m/aused60-crash-time-form.html", Table: "aish-devom-astn-aused-crash-60-tp4", task_name:"Time point 4 - Aused Crash 60 mins" },
+        "aused-crash-60-tp5-data": { url: "$H/m/aused60-crash-time-data.html", Table: "aish-devom-astn-aused-crash-60-tp5", form_module: "aused-crash-60-tp5-form", task_name:"Time point 5 - Aused Crash 60 mins" },
+        "aused-crash-60-tp5-form": { url: "$H/m/aused60-crash-time-form.html", Table: "aish-devom-astn-aused-crash-60-tp5", task_name:"Time point 5 - Aused Crash 60 mins" },
     }
     for(p in modules){
         $vm.module_list[p]=modules[p];
